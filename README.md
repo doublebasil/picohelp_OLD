@@ -1,2 +1,2 @@
-# toms-pico-help
-Some helpful, basic examples of how to do things with the C/C++ pico SDK
+# picohelp
+A guide made by T.Flaherty to help with creating C++ code for the raspberry pico 2040.
