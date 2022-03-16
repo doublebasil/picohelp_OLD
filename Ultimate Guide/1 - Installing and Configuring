@@ -1,0 +1,53 @@
+--- Dependencies from apt ---
+
+Here's a list of dependencies you should install:
+
+git dependencies:
+	git
+	
+SDK dependencies
+	cmake
+	gcc-arm-none-eabi
+	gcc
+	g++
+	
+UART dependencies
+	minicom
+	
+sudo apt install git cmake gcc-arm-none-eabi gcc g++ minicom
+
+
+--- Dependencies from git ---
+
+necessary git repos:
+	pico-sdk
+	picotool
+	
+optional git repos:
+	pico-examples
+	pico-playground
+	pico-extras
+	picoprobe (this is for debugging a pico with another pico)
+	
+I'll walk through setting up the necessary git repos
+
+
+--- pico-sdk
+For pico-sdk, find somewhere on your pc that will never be moved. The 
+sdk should stay in the same place, moving it will require a load of
+commands and will be a pain.
+
+e.g. in ~/raspberry
+
+git clone https://github.com/raspberrypi/pico-sdk.git
+
+Now you need to create a permanent variable so that cmake knows where
+you have your sdk.
+
+export PICO_SDK_PATH=/home/tom/raspberry/pico-sdk
+
+if you do choose to move the pico-sdk, you need to figure out how to
+change the PICO_SDK_PATH variable (good luck!)
+
+--- picotool
+
