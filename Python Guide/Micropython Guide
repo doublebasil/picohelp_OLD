@@ -2,7 +2,22 @@ Build the micropython firmware for the RP2040 using the .sh file
 
 Upload the firmware.uf2 file to the pico
 
-Install thonny using pip
+There are a few ways to interact with the pico with python
+1 - Thonny for micropython
+2 - minicom, for sending individual lines of code
+
+--- 1 Thonny ---
 sudo python3 -m pip install thonny
+python3 -m thonny
+
+--- 2 Minicom ---
+minicom -D /dev/ttyACM0
+press ctrl+D to soft reboot the RPP
+You now have a micropython terminal!
 
 
+
+How to code the RP2040 with Micropython (providing you know Arduino)
+
+
+Blink
