@@ -13,8 +13,11 @@ SDK dependencies
 	
 UART dependencies
 	minicom
-	
-sudo apt install git cmake gcc-arm-none-eabi gcc g++ minicom
+
+picotool dependencies
+
+On Debian distibutions you can run this
+sudo apt install git cmake gcc-arm-none-eabi gcc g++ minicom libusb-1.0-0-dev
 
 
 --- Dependencies from git ---
@@ -39,7 +42,7 @@ commands and will be a pain.
 
 e.g. in ~/raspberry
 
-git clone https://github.com/raspberrypi/pico-sdk.git
+git clone -b master https://github.com/raspberrypi/pico-sdk.git
 
 Now you need to create a permanent variable so that cmake knows where
 you have your sdk.
@@ -47,7 +50,20 @@ you have your sdk.
 export PICO_SDK_PATH=/home/tom/raspberry/pico-sdk
 
 if you do choose to move the pico-sdk, you need to figure out how to
-change the PICO_SDK_PATH variable (good luck!)
+change the PICO_SDK_PATH variable (good luck, it's a pain!)
 
 --- picotool
 
+Run the following commands
+
+git clone -b master https://github.com/raspberrypi/picotool.git &&
+cd picotool &&
+mkdir build &&
+cd build &&
+cmake .. &&
+make &&
+sudo cp picotool /usr/local/bin/ &&
+cd ../.. &&
+gio trash picotool
+
+You now have the picotool command in your linux!
