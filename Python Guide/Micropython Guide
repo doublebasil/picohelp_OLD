@@ -1,0 +1,8 @@
+Build the micropython firmware for the RP2040 using the .sh file
+
+Upload the firmware.uf2 file to the pico
+
+Install thonny using pip
+sudo python3 -m pip install thonny
+
+
