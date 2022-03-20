@@ -36,6 +36,7 @@ I'll walk through setting up the necessary git repos
 
 
 --- pico-sdk
+(See end of section for copy-paste code!)
 For pico-sdk, find somewhere on your pc that will never be moved. The 
 sdk should stay in the same place, moving it will require a load of
 commands and will be a pain.
@@ -51,6 +52,16 @@ export PICO_SDK_PATH=/home/tom/raspberry/pico-sdk
 
 if you do choose to move the pico-sdk, you need to figure out how to
 change the PICO_SDK_PATH variable (good luck, it's a pain!)
+
+if you're so inclined, you can just copy the code below to do this all for you
+
+cd ~/Documents &&
+mkdir .pico-sdk &&
+cd .pico-sdk &&
+git clone -b master https://github.com/raspberrypi/pico-sdk.git &&
+cd pico-sdk &&
+export PICO_SDK_PATH=$PWD
+
 
 --- picotool
 
