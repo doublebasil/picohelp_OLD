@@ -1,0 +1,9 @@
+Put the pico in bootloader mode by either
+A) Holding the bootloader button while you plug the pico in
+B) Ground the RUN pin, and hold the bootloader button while un-grounding RUN
+
+A directory on your computer will appear, called RPI-RP2
+
+Drag the test.uf2 file (within this folder) to the RPI-RP2
+
+The Pico should start blinking

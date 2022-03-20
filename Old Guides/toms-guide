@@ -41,7 +41,7 @@ To view Serial output from the pico, you can use this console command:
 
 minicom -b 115200 -o -D /dev/ttyACM0
 
-If that doens't work, try ttyACM1 etc.
+If that doensn't work, try ttyACM1 etc.
 
 If you want to know how to use minicom, press ctrl+a, then press z
 without pressing ctrl. To exit minicom, use crtl+a then press x

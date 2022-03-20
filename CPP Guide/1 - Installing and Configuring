@@ -15,6 +15,7 @@ UART dependencies
 	minicom
 
 picotool dependencies
+    libusb-1.0-0-dev
 
 On Debian distibutions you can run this
 sudo apt install git cmake gcc-arm-none-eabi gcc g++ minicom libusb-1.0-0-dev
@@ -41,7 +42,7 @@ For pico-sdk, find somewhere on your pc that will never be moved. The
 sdk should stay in the same place, moving it will require a load of
 commands and will be a pain.
 
-e.g. in ~/raspberry
+e.g. in ~/Documents/.pico-sdk/
 
 git clone -b master https://github.com/raspberrypi/pico-sdk.git
 

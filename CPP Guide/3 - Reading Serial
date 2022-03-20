@@ -1,0 +1,5 @@
+(This is unfinished)
+
+You can view serial messages from the pico using minicom
+
+minicom -b 115200 -o -D /dev/ttyACM0
