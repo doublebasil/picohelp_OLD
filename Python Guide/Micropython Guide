@@ -1,23 +1,33 @@
+Guides:
+https://datasheets.raspberrypi.com/pico/raspberry-pi-pico-python-sdk.pdf
+
+
 Build the micropython firmware for the RP2040 using the .sh file
 
 Upload the firmware.uf2 file to the pico
 
-There are a few ways to interact with the pico with python
-1 - Thonny for micropython
-2 - minicom, for sending individual lines of code
+There are a few ways to interact with the pico using micropython
 
---- 1 Thonny ---
-sudo python3 -m pip install thonny
+1) Thonny - IDE with built in uploading
+    sudo python3 -m pip install thonny
 python3 -m thonny
+You should set the IDE to Raspberry Pi Pico mode
 
---- 2 Minicom ---
+2) rshell - Terminal based, can upload main.py files to the pico
+Install rshell to linux using pip
+    sudo python3 -m pip install rshell
+Now you can use rshell from a linux terminal
+To upload a main.py file from the terminal's cwd (from within rshell)
+cp main.py /pyboard/main.py
+
+3) Minicom - Terminal for listening to serial and running single lines of python
+    sudo apt install minicom
 minicom -D /dev/ttyACM0
 press ctrl+D to soft reboot the RPP
 You now have a micropython terminal!
 
 
+You can get a basic micropython guide by typing help() within the micropython
+terminal
 
-How to code the RP2040 with Micropython (providing you know Arduino)
-
-
-Blink
+Look at the main.py file for an example of blink code
