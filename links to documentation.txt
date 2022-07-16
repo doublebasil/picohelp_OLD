@@ -1,0 +1,8 @@
+ Pinout Diagram
+ https://datasheets.raspberrypi.com/pico/Pico-R3-A4-Pinout.pdf
+
+ Raspberry Pi Pico Datasheet
+ https://datasheets.raspberrypi.com/pico/pico-datasheet.pdf
+
+ All the other documentation
+ https://www.raspberrypi.com/documentation/microcontrollers/raspberry-pi-pico.html
